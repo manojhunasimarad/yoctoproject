@@ -119,7 +119,7 @@ SOURCE_MIRROR_URL ?= "file://${DOWNLOADS_DIR}/"
 INHERIT += "own-mirrors"
 BB_GENERATE_MIRROR_TARBALLS = "1"
 # Locale settings for Yocto builds (to avoid unsupported locale errors)
-GLIBC_GENERATE_LOCALES = "${LOCALE}"
+#GLIBC_GENERATE_LOCALES = "${LOCALE}"
 ENABLE_BINARY_LOCALE_GENERATION = "1"
 CONNECTIVITY_CHECK_URIS = "https://www.google.com/"
 #skip connectivity checks
@@ -137,11 +137,11 @@ bitbake-layers show-layers
 
 # Build the image (you can change the target image as needed)
 echo "Starting the build process..."
-bitbake core-image-minimal -k
+bitbake core-image-minimal
 
 # Notify user of completion and next steps
 echo "Build completed. The image is located in tmp/deploy/images/raspberrypi3-64/"
 echo "Use the following command to flash the image to your SD card:"
 echo "sudo dd if=tmp/deploy/images/raspberrypi3-64/core-image-minimal-raspberrypi3-64.rpi-sdimg of=/dev/sdX bs=4M status=progress"
 
-wget https://github.com/balena-io/etcher/releases/download/v2.1.0/balena-etcher_2.1.0_amd64.deb
+#wget https://github.com/balena-io/etcher/releases/download/v2.1.0/balena-etcher_2.1.0_amd64.deb
