@@ -104,7 +104,7 @@ add_layer_to_bblayers "../meta-virtualization"                 # Virtualization 
 # Configure local.conf
 echo "Configuring local.conf..."
 cat <<EOL >> conf/local.conf
-MACHINE ??= "raspberrypi2"
+MACHINE ??= "raspberrypi3-64"
 #DISTRO_FEATURES:append = " virtualization systemd"
 #MACHINE_ESSENTIAL_EXTRA_RRECOMMENDS += "kernel-modules"
 #VIRTUAL-RUNTIME_init_manager = "systemd"

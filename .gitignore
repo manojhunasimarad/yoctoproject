@@ -1,0 +1,8 @@
+build
+downloads 
+meta-openembedded  
+meta-raspberrypi  
+meta-virtualization  
+poky
+workbuildsetup.sh
+sstate-cache 

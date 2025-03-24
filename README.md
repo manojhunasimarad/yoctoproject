@@ -18,4 +18,24 @@ https://www.linkedin.com/pulse/yocto-embedded-linux-building-your-own-first-imag
 https://github.com/Amitrk619/custom-application-layer-in-YOCTO-for-Raspberry-Pi-3
 https://kickstartembedded.com/2021/12/22/yocto-part-4-building-a-basic-image-for-raspberry-pi/
 
+#git commands for initalising repo
+```bash
+git init
+git add .
+git commit -m "adding the repo"
+```
+
+add the ssh keys in the github repo
+``` bash
+ssh-keygen -t ed25519 -C "manojsumya@gmail.com"
+ssh-add ~/.ssh/id_ed25519
+cat ~/.ssh/id_ed25519.pub
+ssh -T git@github.com
+```
+
+To check remote url
+```bash
+git remote -v
+```
+Hi manojhunasimarad! You've successfully authenticated, but GitHub does not provide shell access.
 
